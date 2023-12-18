@@ -99,4 +99,3 @@ function resetGame() {
 }
 
 resetButton.addEventListener('click', resetGame);
-
