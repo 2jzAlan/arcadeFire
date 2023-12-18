@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.game-container {
+    position: relative;
+    right: 80px;
+    top: 200px;
+    height: 500px;
+    width: 600px;
+    max-width: 1280px; /* Set a maximum width */
+    max-height: 300px;
+    margin: 0 auto; /* Center the container */
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    overflow: hidden; /* Hide content that goes beyond the rounded corners */
+}
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, button {
+    margin: 0;
+    padding: 0;
+    font-size: 0.65rem;
+}
+
+/* Apply a box-sizing border-box to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* New style for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Place items at each end */
+    align-items: center;
+
+    padding: 1rem; /* Adjust padding as needed */
+}
+
+/* Style for each navbar item */
+.navbar-item {
+    margin: 0 10px; /* Add margin between items */
+}
+
+body {
+    background-color: #0d0d0d; /* Dark background reminiscent of arcade screens */
+    font-family: 'Press Start 2P', cursive; /* Use a pixelated font */
+    color: #fff; /* Set text color to white */
+    background-image: url('Images/Arcade Fire.png');
+    background-size: cover; /* Adjusts the size of the background image to cover the entire body */
+    background-position: center; /* Positions the background image at the center */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+}
+
+/* Center the buttons using Flexbox */
+.selections {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Add some spacing between buttons */
+}
+
+/* Style the container for game results */
+.results {
+    margin-top: 2rem; /* Increase top margin */
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1rem; /* Add spacing between result items */
+}
+
+/* Style the score display for both players */
+.results-score {
+    font-size: 1.5rem; /* Reduce font size */
+}
+
+/* Style the score display for the result */
+.result-selection {
+    opacity: 0.7; /* Reduce opacity for result display */
+}
+
+/* Style the winner's selection display */
+.result-selection.winner {
+    opacity: 1;
+    font-size: 1.8rem; /* Slightly increase font size for winner */
+}
+
+/* Style for the fire button */
+#fireButton {
+    background-color: #ff0000; /* Reddish color */
+    border-radius: 50%; /* Make it a circle */
+    width: 30px; /* Set width to make it a circle */
+    height: 30px; /* Set height to make it a circle */
+    font-size: 1rem; /* Adjust font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; /* Remove button border */
+}
+
+/* Style for the wind button */
+#windButton {
+    background-color: #00ff6a; /* Greenish color */
+    border-radius: 50%; /* Make it a circle */
+    width: 30px; /* Set width to make it a circle */
+    height: 30px; /* Set height to make it a circle */
+    font-size: 1rem; /* Adjust font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; /* Remove button border */
+}
+
+/* Style for the water button */
+#waterButton {
+    background-color: #0040ff; /* Bluish color */
+    border-radius: 50%; /* Make it a circle */
+    width: 30px; /* Set width to make it a circle */
+    height: 30px; /* Set height to make it a circle */
+    font-size: 1rem; /* Adjust font size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none; /* Remove button border */
+}
+
+/* Hover effect for the fire button */
+#fireButton:hover {
+    transform: scale(1.1); /* Make it slightly bigger on hover */
+    background-color: #ff6666; /* Change color on hover */
+}
+
+/* Hover effect for the wind button */
+#windButton:hover {
+    transform: scale(1.1); /* Make it slightly bigger on hover */
+    background-color: #33ff99; /* Change color on hover */
+}
+
+/* Hover effect for the water button */
+#waterButton:hover {
+    transform: scale(1.1); /* Make it slightly bigger on hover */
+    background-color: #668cff; /* Change color on hover */
+}
+
+/* Style for the 1P and CPU elements */
+.player-score,
+.computer-score,
+.navbar-item {
+    color: yellow;
+}
+
+/* Style for the numbers inside these elements */
+.player-score .results-score,
+.computer-score .results-score,
+.navbar-item .results-score {
+    color: white; /* Set the color of numbers to white */
+}
+
+/* Keyframes for blinking animation */
+@keyframes blink {
+    0% {
+        color: rgb(255, 0, 0); /* Set initial color */
+        font-size: 1rem; /* Initial font size */
+    }
+    50% {
+        color: white; /* Change to white at 50% */
+        font-size: 1.05rem;
+    }
+    100% {
+        color: rgb(255, 0, 0); /* Back to the initial color */
+        font-size: 1rem; /* Back to the initial font size */
+    }
+}
+
+/* Apply the blinking animation to the reset button */
+#resetButton {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: yellow;
+    cursor: pointer;
+    border: none;
+    background: none;
+    animation: blink 4s infinite; /* Use the blink animation infinitely */
+}
+
+#resetButton:hover {
+    text-decoration: underline;
+    font-size: 1.05rem; /* Slightly increase font size on hover */
+}

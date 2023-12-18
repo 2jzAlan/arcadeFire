@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="game-container">
+    <nav class="navbar">
+        <div class="navbar-item">High Score: <span class="results-score" data-high-score>0</span></div>
+        <button id="resetButton" class="navbar-item" type="button">Start Over</button>
+    </nav>
+    <div class="selections">
+        <button id="fireButton" class="selection" type="button" data-selection="fire">🔥</button>
+        <button id="windButton" class="selection" type="button" data-selection="wind">💨</button>
+        <button id="waterButton" class="selection" type="button" data-selection="water">🌊</button>
+    </div>
+    <div class="results">
+        <div class="player-score">1P
+            <span class="results-score" data-your-score>0</span>
+        </div>
+        <div class="computer-score" data-final-column>CPU
+            <span class="results-score" data-computer-score>0</span>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
