@@ -99,3 +99,7 @@ function resetGame() {
 }
 
 resetButton.addEventListener('click', resetGame);
+
+function navigateToMainMenu() {
+      window.location.href = 'intro.html';
+    }

@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: retro;
+    src: url(zerovelo.ttf);
+}
+
+body {
+    background-color: #000023;
+    color: white;
+    font-family: 'Press Start 2P';
+}
+
+h1 {
+    font-family: retro;
+    font-size: 60px;
+    color: rgb(255, 166, 0);
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    color: #c8ff00;
+    font-family: 'Press Start 2P';
+    font-size: 20px;
+}
+
+#underline {
+    border-bottom: 20px solid;
+    color: rgb(255, 94, 0);
+    font-size: 45px;
+}
+
+#logo {
+    width: 100px;
+}
+
+#landing {
+    background-image: url(images/space.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 15px;
+}
+
+h3 {
+    margin: 20px
+}
+
+li {
+    margin: 30px;
+}
+
+#restart {
+    color: red;
+}
+
+#begin {
+    color: #c8ff00;
+}

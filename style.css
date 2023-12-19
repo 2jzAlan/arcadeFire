@@ -48,6 +48,7 @@ body {
     background-position: center; /* Positions the background image at the center */
     background-repeat: no-repeat; /* Prevents the background image from repeating */
     background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    margin: 0 auto;
 }
 
 /* Center the buttons using Flexbox */
@@ -175,7 +176,7 @@ body {
 #resetButton {
     font-family: 'Press Start 2P', cursive;
     font-size: 1rem;
-    color: yellow;
+    color: #ffff00;
     cursor: pointer;
     border: none;
     background: none;
@@ -185,4 +186,16 @@ body {
 #resetButton:hover {
     text-decoration: underline;
     font-size: 1.05rem; /* Slightly increase font size on hover */
+}
+
+#btn {
+    margin-left: 50px;
+    background-color: #00000000;
+    border: none;
+    color: #ffff00;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#btn:hover {
+    text-decoration: underline;
 }
